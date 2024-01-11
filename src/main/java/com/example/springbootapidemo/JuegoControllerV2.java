@@ -103,12 +103,14 @@ public class JuegoControllerV2 {
     /**
      * Elimina un juego
      */
-    public ResponseEntity delete(@PathVariable Long id){
+    public ResponseEntity<Juego> delete(@PathVariable Long id){
+        Juego salida = new Juego();
         if( repo.existsById(id)){
+            salida = repo.findById(id).get();
             repo.deleteById(id);
-            return new ResponseEntity<>(HttpStatus.OK );
+            return new ResponseEntity<Juego>(salida,HttpStatus.OK );
         } else {
-            return new ResponseEntity<>( HttpStatus.NOT_FOUND );
+            return new ResponseEntity<Juego>(salida,HttpStatus.NOT_FOUND );
         }
     }
 }
