@@ -74,4 +74,41 @@ public class JuegoControllerV2 {
     public Juego nuevo(@RequestBody Juego juego){
         return repo.save(juego);
     }
+
+    @PutMapping("/{id}")
+    /**
+     * Actualiza un juego que ya exista, o lo guarda si no existe
+     */
+    public Juego put(@PathVariable Long id, @RequestBody Juego juegonuevo){
+
+        var juego = new Juego();
+
+        var optionalJuego = repo.findById(id);
+
+        if(optionalJuego.isEmpty()){
+            juego = juegonuevo;
+        } else{
+            juego = optionalJuego.get();
+            juego.setNombre( juegonuevo.getNombre() );
+            juego.setAño( juegonuevo.getAño() );
+            juego.setCategoria( juegonuevo.getCategoria() );
+            juego.setPlataforma( juegonuevo.getPlataforma() );
+        }
+
+        return repo.save(juego);
+    }
+
+
+    @DeleteMapping("/{id}")
+    /**
+     * Elimina un juego
+     */
+    public ResponseEntity delete(@PathVariable Long id){
+        if( repo.existsById(id)){
+            repo.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.OK );
+        } else {
+            return new ResponseEntity<>( HttpStatus.NOT_FOUND );
+        }
+    }
 }
