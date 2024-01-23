@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de juegos</title>
+</head>
+
+<body>
+    <h1>Listado de juegos</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Plataforma</th>
+                <th>Categoria</th>
+                <th>año</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="juego: ${juegos}">
+                <td th:text="${juego.id}"></td>
+                <td>
+                    <a th:href=" '/web/'+${juego.id}" th:text="${juego.nombre}">
+                    </a>
+                </td>
+                <td th:text="${juego.plataforma}"></td>
+                <td th:text="${juego.categoria}"></td>
+                <td th:text="${juego.año}"></td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

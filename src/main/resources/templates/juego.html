@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${juego.nombre} +'-'+ ${juego.plataforma}"></title>
+</head>
+<body>
+    <h1 th:text="${juego.nombre}"></h1>
+    <p th:text="${juego.año}"></p>
+    <p th:text="${juego.plataforma}"></p>
+    <p th:text="${juego.categoria}"></p>
+    <a th:href="${'/web'}">Volver</a>
+</body>
+</html>
