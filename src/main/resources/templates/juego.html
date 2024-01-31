@@ -9,6 +9,8 @@
     <p th:text="${juego.año}"></p>
     <p th:text="${juego.plataforma}"></p>
     <p th:text="${juego.categoria}"></p>
+    <a th:href="${'/web/'+juego.id+'/edit'}">Editar</a>
     <a th:href="${'/web'}">Volver</a>
+
 </body>
 </html>

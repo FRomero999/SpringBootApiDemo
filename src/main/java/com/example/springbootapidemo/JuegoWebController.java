@@ -5,10 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -51,4 +48,26 @@ public class JuegoWebController {
         }
     }
 
+    @GetMapping("/{id}/edit")
+    /**
+     * Va a la página de edición con un formulario
+     */
+    public String edit(@PathVariable Long id, Model model){
+        if( repo.existsById(id)){
+            model.addAttribute("juego",repo.findById(id).get());
+            return "edit";
+        } else {
+            return "redirect:/web";
+        }
+    }
+
+    @PostMapping("/{id}/edit")
+    /**
+     * Recibe los datos del formulario y actualiza
+     */
+    public String editPost(@PathVariable Long id, @ModelAttribute Juego datos, Model model){
+        System.out.println(datos);
+        repo.save(datos);
+        return "redirect:/web/"+id;
+    }
 }
