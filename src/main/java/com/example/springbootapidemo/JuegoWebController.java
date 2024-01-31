@@ -65,9 +65,29 @@ public class JuegoWebController {
     /**
      * Recibe los datos del formulario y actualiza
      */
-    public String editPost(@PathVariable Long id, @ModelAttribute Juego datos, Model model){
+    public String editPost(@PathVariable Long id, @ModelAttribute Juego datos){
         System.out.println(datos);
         repo.save(datos);
         return "redirect:/web/"+id;
+    }
+
+    @GetMapping("/new")
+    /**
+     * Muestra el formulario vacio
+     */
+    public String newJuego(Model model){
+        Juego nuevo = new Juego();
+        model.addAttribute(nuevo);
+        return "edit";
+    }
+
+    @PostMapping("/new")
+    /**
+     * Guarda el juego creado
+     */
+    public String newJuego(@ModelAttribute Juego datos){
+        Juego nuevo = new Juego();
+        repo.save(datos);
+        return "redirect:/web/"+datos.getId();
     }
 }

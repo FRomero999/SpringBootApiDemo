@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title th:text="${juego.nombre} +'-'+ ${juego.plataforma}"></title>
+    <title th:if="${juego.id!=null}" th:text="${juego.nombre} +'-'+ ${juego.plataforma}"></title>
+    <title th:unless="${juego.id!=null}">Nuevo juego</title>
     <style>
         form{
             display:grid;
@@ -13,9 +14,13 @@
     </style>
 </head>
 <body>
+    <h1 th:if="${juego.id!=null}" th:text="${juego.nombre}"></h1>
+    <h1 th:unless="${juego.id!=null}">Nuevo juego</h1>
+
     <form action="" method="POST">
+        <input th:value="${juego.id}" type="hidden" name="id" >
         <input th:value="${juego.nombre}" name="nombre">
-        <input th:value="${juego.año}" name="año">
+        <input th:value="${juego.año}" type="number" name="año">
         <input th:value="${juego.plataforma}" name="plataforma">
         <input th:value="${juego.categoria}" name="categoria">
         <input type="submit" value="Guardar">
