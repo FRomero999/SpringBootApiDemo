@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 
 /*
@@ -33,6 +34,11 @@ public class JuegoControllerV4 {
     @Autowired
     private JuegoRepository repo;
 
+    @Autowired
+    private SecurityService security;
+
+
+
     @GetMapping("/")
     /**
      *  Devuelve todos los juegos sin filtrar
@@ -53,17 +59,38 @@ public class JuegoControllerV4 {
         }
     }
 
-    @GetMapping("/login")
-    public ResponseEntity login(HttpServletRequest request){
+    @GetMapping("/{id}/lite")
+    /**
+     * Devuelve un solo juego
+     */
+    public ResponseEntity getLite(@PathVariable Long id){
+        if( repo.existsById(id)){
+            Juego  j = repo.findById(id).get();
+            HashMap salida = new HashMap();
+            salida.put("status","ok");
+            salida.put("name",j.getNombre());
+            salida.put("antigüedad",2024-j.getAño());
+            return new ResponseEntity<>(salida, HttpStatus.OK );
+        } else {
+            return new ResponseEntity<>( HttpStatus.NOT_FOUND );
+        }
+    }
+
+    @GetMapping("/login/{token}")
+    public ResponseEntity login(HttpServletRequest request,@PathVariable String token){
         HttpSession s = request.getSession();
-        s.setAttribute("login",true);
-        return new ResponseEntity<String>("Successfully logged!",HttpStatus.OK);
+        if( security.validateToken(token) ) {
+            s.setAttribute("login", true);
+            return new ResponseEntity<>("Successfully logged!", HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        }
     }
 
     @GetMapping("/logout")
     public ResponseEntity logout(HttpServletRequest request){
         HttpSession s = request.getSession();
-        s.removeAttribute("login");
+        s.setAttribute("login",false);
         return new ResponseEntity<String>("Successfully logged out!",HttpStatus.OK);
     }
 
@@ -82,6 +109,11 @@ public class JuegoControllerV4 {
                 salida = new ResponseEntity<Juego>(repo.save(juego), HttpStatus.OK);
         }
         return salida;
+    }
+
+    @GetMapping("/sumar")
+    public ResponseEntity sumar(@RequestParam Integer s1, @RequestParam Integer s2){
+        return new ResponseEntity<String>("La suma es "+ (s1+s2),HttpStatus.OK);
     }
 
 

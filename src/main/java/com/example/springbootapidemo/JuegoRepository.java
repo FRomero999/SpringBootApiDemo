@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface JuegoRepository extends JpaRepository<Juego, Long> {
-
     public List<Juego> getJuegosByCategoria(String categoria);
 
     public List<Juego> getJuegosByPlataforma(String plataforma);
@@ -15,5 +14,5 @@ public interface JuegoRepository extends JpaRepository<Juego, Long> {
 
     @Query("SELECT DISTINCT(j.plataforma) FROM Juego j")
     public List<String> plataformas();
-
 }
+

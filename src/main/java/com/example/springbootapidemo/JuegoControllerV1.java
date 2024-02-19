@@ -36,9 +36,6 @@ public class JuegoControllerV1 {
     }
 
     @GetMapping("/{id}")
-    /**
-     * Devuelve un solo juego
-     */
     public ResponseEntity<Juego> get(@PathVariable Long id){
         if( repo.existsById(id)){
             return new ResponseEntity<Juego>( repo.findById(id).get(), HttpStatus.OK );

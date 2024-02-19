@@ -27,9 +27,6 @@ public class JuegoWebController {
     private JuegoRepository repo;
 
     @GetMapping("")
-    /**
-     *  Devuelve todos los juegos sin filtrar
-     * */
     public String home(Model model) {
         model.addAttribute("juegos",repo.findAll());
         return "home";
@@ -44,7 +41,7 @@ public class JuegoWebController {
             model.addAttribute("juego",repo.findById(id).get());
             return "juego";
         } else {
-            return "redirect:/";
+            return "redirect:/web";
         }
     }
 

@@ -31,6 +31,8 @@ public class JuegoControllerV3 {
 
     @Autowired
     private SecurityService security;
+    @Autowired
+    private JuegoService servicio;
 
     @GetMapping("/")
     /**
@@ -44,6 +46,7 @@ public class JuegoControllerV3 {
     /**
      * Devuelve un solo juego
      */
+    @CrossOrigin("http://localhost:8080")
     public ResponseEntity<Juego> get(@PathVariable Long id){
         if( repo.existsById(id)){
             return new ResponseEntity<Juego>( repo.findById(id).get(), HttpStatus.OK );
@@ -67,6 +70,7 @@ public class JuegoControllerV3 {
         return repo.getJuegosByAñoBefore(año);
     }
 
+
     @GetMapping("plataformas")
     public List<String> plataformas(){
         return repo.plataformas();
@@ -77,6 +81,7 @@ public class JuegoControllerV3 {
      */
     @PostMapping("/")
     public ResponseEntity<Juego> nuevo(@RequestBody Juego juego, @RequestParam String token){
+        System.out.println( security.validateToken(token));
         if( security.validateToken(token) )
             return new ResponseEntity<Juego>(repo.save(juego),HttpStatus.OK);
         else
@@ -92,24 +97,13 @@ public class JuegoControllerV3 {
         if( !security.validateToken(token) ){
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         } else{
-            var juego = new Juego();
-
-            var optionalJuego = repo.findById(id);
-
-            if(optionalJuego.isEmpty()){
-                juego = juegonuevo;
-            } else{
-                juego = optionalJuego.get();
-                juego.setNombre( juegonuevo.getNombre() );
-                juego.setAño( juegonuevo.getAño() );
-                juego.setCategoria( juegonuevo.getCategoria() );
-                juego.setPlataforma( juegonuevo.getPlataforma() );
-            }
-
-            return new ResponseEntity<Juego>(repo.save(juego),HttpStatus.OK);
+            var juego = servicio.modificarCrearJuego(id, juegonuevo);
+            return new ResponseEntity<Juego>(juego,HttpStatus.OK);
         }
 
     }
+
+
 
 
     @DeleteMapping("/{id}")
