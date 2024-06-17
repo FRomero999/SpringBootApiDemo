@@ -1,0 +1,417 @@
+[{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0f9b"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-6804",
+	"properties": {
+		"x": 36.720876,
+		"y": -4.416964,
+		"nombre": "PUERTA DE LA ALCAZABA",
+		"direccion": "C/ ALCAZABILLA, 1",
+		"horario": "LUNES-VIERNES: 10:00-14:00, DOMINGO: 10:00-14:00",
+		"telefono": "951926020"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0f9c"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-6803",
+	"properties": {
+		"x": 36.720818,
+		"y": -4.417308,
+		"nombre": "TRAZA DE LA MURALLA DE LA ALCAZABA A PUERTA DE GRANADA",
+		"direccion": "C/ ALCAZABILLA, 11-13",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0f9d"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-6802",
+	"properties": {
+		"x": 36.721212,
+		"y": -4.417254,
+		"nombre": "TORRE DE LA MURALLA MEDIEVAL",
+		"direccion": "C/ ALCAZABILLA, 15",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0f9e"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-6801",
+	"properties": {
+		"x": 36.722783,
+		"y": -4.417499,
+		"nombre": "TRAZA DE LA MURALLA EN LA PUERTA DE GRANADA",
+		"direccion": "C/ GRANADA",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0f9f"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-6800",
+	"properties": {
+		"x": 36.722766,
+		"y": -4.417523,
+		"nombre": "LIENZO Y TORRE DE LA MURALLA",
+		"direccion": "C/ MEDINA CONDE, 3",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fa2"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67fd",
+	"properties": {
+		"x": 36.723493,
+		"y": -4.41918,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "C/ MARQUÉS DE GUADIARO, 8",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fa3"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67fc",
+	"properties": {
+		"x": 36.723237,
+		"y": -4.419885,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "C/ BEATAS, 15",
+		"horario": "LUNES 10:00-16:00, MARTES-DOMINGO: 10:0019:00",
+		"telefono": "952210440"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fa4"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67fb",
+	"properties": {
+		"x": 36.723703,
+		"y": -4.419706,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "C/ CARCER,3",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fa5"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67fa",
+	"properties": {
+		"x": 36.72415,
+		"y": -4.420615,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "PUERTA DE BUENAVENTURA",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fa6"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f9",
+	"properties": {
+		"x": 36.723981,
+		"y": -4.420615,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "PUERTA DE BUENAVENTURA, 3",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fa7"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f8",
+	"properties": {
+		"x": 36.72397,
+		"y": -4.42081,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "C/ MURO DE SAN JULIÁN, 33",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": "951926159"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fa8"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f7",
+	"properties": {
+		"x": 36.723484,
+		"y": -4.423082,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "C/ CARRETERÍA, 62-64",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fa9"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f6",
+	"properties": {
+		"x": 36.723041,
+		"y": -4.423574,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "C/ ARCO DE LA CABEZA, 1-7",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0faa"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f5",
+	"properties": {
+		"x": 36.721661,
+		"y": -4.42493,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "C/ CARRETERÍA, 6-10",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fab"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f4",
+	"properties": {
+		"x": 36.721377,
+		"y": -4.425006,
+		"nombre": "PUERTA NUEVA",
+		"direccion": "C/ PUERTA NUEVA",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fac"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f3",
+	"properties": {
+		"x": 36.720197,
+		"y": -4.42496,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "PASILLO DE SANTA ISABEL, 5-9",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fad"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f2",
+	"properties": {
+		"x": 36.72004,
+		"y": -4.424936,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "PASILLO DE SANTA ISABEL, 11",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fae"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f1",
+	"properties": {
+		"x": 36.71818,
+		"y": -4.423866,
+		"nombre": "MURALLA MEDIEVAL / PUERTA DE ATARAZANAS",
+		"direccion": "C/ ATARAZANAS, 10",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0faf"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67f0",
+	"properties": {
+		"x": 36.718163,
+		"y": -4.421148,
+		"nombre": "MURALLA MEDIEVAL",
+		"direccion": "PLAZA DE LA MARINA",
+		"horario": "ACCESO LIBRE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb0"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67ef",
+	"properties": {
+		"x": 36.720184,
+		"y": -4.417514,
+		"nombre": "MURALLA MEDIEVAL / TUMBA DEL GUERRERO",
+		"direccion": "PLAZA DE LA ADUANA",
+		"horario": "MARTES-SÁBADO: 9:00-21:00, DOMINGO: 9:00-15:00",
+		"telefono": "951039269"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb1"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67ee",
+	"properties": {
+		"x": "373540.93",
+		"y": "4064723.07",
+		"nombre": "MURALLA MEDIEVAL / MÁLAGA ROMANA",
+		"direccion": "AVENIDA DE CERVANTES, 2",
+		"horario": "LUNES-VIERNES: 8:00-21:00, SABADO: 9:00-14:00",
+		"telefono": "952137006"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb2"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67ed",
+	"properties": {
+		"x": 36.719913,
+		"y": -4.416044,
+		"nombre": "MÁLAGA ROMANA",
+		"direccion": "AVENIDA DE CERVANTES, 2",
+		"horario": "LUNES-VIERNES: 8:00-21:00, SABADO: 9:00-14:00",
+		"telefono": "952137006"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb3"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67ec",
+	"properties": {
+		"x": 36.72119,
+		"y": -4.416771,
+		"nombre": "TEATRO ROMANO",
+		"direccion": "C/ ALCAZABILLA",
+		"horario": "MARTES-SÁBADO: 10:00-18:00, DOMINGO: 10:00-16:00",
+		"telefono": "951501115"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb5"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67ea",
+	"properties": {
+		"x": 36.721399,
+		"y": -4.418767,
+		"nombre": "MALACA ROMANA",
+		"direccion": "C/ SAN AGUSTIN, 8",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": "952127600"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb6"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e9",
+	"properties": {
+		"x": 36.72073,
+		"y": -4.418885,
+		"nombre": "MÁLAGA ROMANA",
+		"direccion": "C/ CISTER, 3",
+		"horario": "NO VISITABLE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb7"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e8",
+	"properties": {
+		"x": 36.721358,
+		"y": -4.422841,
+		"nombre": "MÁLAGA ROMANA",
+		"direccion": "C/ COMPAÑÍA, 10",
+		"horario": "NO VISITABLE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb8"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e7",
+	"properties": {
+		"x": 36.720048,
+		"y": -4.42489,
+		"nombre": "MÁLAGA ROMANA",
+		"direccion": "PASILLO DE SANTA ISABEL, 5-9",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fb9"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e6",
+	"properties": {
+		"x": 36.7199,
+		"y": -4.415953,
+		"nombre": "MÁLAGA FENICIA",
+		"direccion": "AVENIDA DE CERVANTES, 2",
+		"horario": "LUNES-VIERNES: 8:00-21:00, SABADO: 9:00-14:00",
+		"telefono": "952137006"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fba"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e5",
+	"properties": {
+		"x": 36.720046,
+		"y": -4.417236,
+		"nombre": "MÁLAGA FENICIA",
+		"direccion": "PLAZA DE LA ADUANA",
+		"horario": "MARTES-SÁBADO: 9:00-21:00, DOMINGO: 9:00-15:00",
+		"telefono": "951039269"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbb"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e4",
+	"properties": {
+		"x": 36.721747,
+		"y": -4.418421,
+		"nombre": "MÁLAGA FENICIA",
+		"direccion": "C/ SAN AGUSTIN, 8",
+		"horario": "CONSULTAR HORARIO",
+		"telefono": "952127600"
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbc"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e3",
+	"properties": {
+		"x": 36.720754,
+		"y": -4.419032,
+		"nombre": "MÁLAGA FENICIA",
+		"direccion": "C/ CISTER, 3",
+		"horario": "NO VISITABLE",
+		"telefono": ""
+	}
+}, {
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e2",
+	"properties": {
+		"x": 36.722514,
+		"y": -4.416621,
+		"nombre": "MÁLAGA FENICIA",
+		"direccion": "PLAZA JESÚS EL RICO, 1",
+		"horario": "NO VISITABLE",
+		"telefono": "952060104"
+	}
+}]
